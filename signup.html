@@ -1,0 +1,152 @@
+<!doctype html>
+
+<head>
+    <title>Three Level Password Authentication</title>
+    <link rel="icon" href="images/fav1.jpg" type="image/gif" sizes="16x16">
+    <style>
+        li {
+            display: inline;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3d3d3;
+            font-family: system-ui;
+            font-size: x-large;
+
+        }
+
+        li {
+
+            float: left;
+            text-align: center;
+            margin: -17px 30px;
+            padding: 11px 10px;
+        }
+
+        li a {
+            display: block;
+            color: #994f10;
+            text-align: center;
+            padding: 17px 44px;
+            padding: 13px 44px;
+            text-decoration: revert;
+            text-align: center;
+        }
+
+        li a:hover {
+            background-color: #9973bd;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+            color: rgb(31, 236, 48);
+        }
+
+        h1 {
+            color: darkgoldenrod;
+            font-family: fangsong;
+        }
+
+        h1:hover {
+            color: tomato;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+        }
+
+        h2 {
+            font-size: 43px;
+            display: contents;
+            color: teal;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h2:hover {
+            background-color: salmon;
+            color: violet;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+
+        }
+
+        body {
+            background: url("https://media.istockphoto.com/photos/round-podium-or-pedestal-with-blue-background-picture-id1226478932?b=1&k=20&m=1226478932&s=170667a&w=0&h=hXsvxQilNanpKx7QC_tIsFUOKPl8fdIDfJ_QSKXesGE=");
+            background-repeat: repeat-n;
+            background-size: 1417px 664px;
+
+        }
+
+        #name,
+        #gmail,
+        #passwords,
+        #phone,
+        #confirm {
+            font-size: 22px;
+            color: #cfefc5;
+        }
+
+        #name:hover,
+        #gmail:hover,
+        #passwords:hover,
+        #phone:hover,
+        #confirm:hover {
+            color: #f31eac;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+
+        }
+    </style>
+
+
+</head>
+
+<center>
+    <br>
+    <marquee>
+        <h1>THREE LEVEL PASSWORD AUTHENTICATION SYSTEM</h1>
+    </marquee><br><br>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signup.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <br>
+    <br>
+
+
+    <p>
+    <h2>Sign Up</h2>
+    </p>
+
+    <br><br>
+    <form method="POST" action="signupdb1.php">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font id="name">NAME : <input type="text"
+                style="padding: 8px 28px; margin: -6px -2px; border: 2px teal solid; border-radius: 19px;" name="name"
+                value="" required></font><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font id="gmail">E-MAIL: <input type="text"
+                style="padding: 8px 31px;border: 2px teal solid; border-radius: 19px; margin: -6px -2px;" name="email"
+                value="" required></font><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font id="passwords">PASSWORD:<input type="password"
+                style="padding: 8px 34px; border: 2px teal solid; border-radius: 19px; margin: -6px 6px;"
+                name="password" value="" required></font><br><br>
+        <font id="confirm">CONFIRM PASSWORD:<input type="password"
+                style="padding: 8px 46px; border: 2px teal solid; border-radius: 19px; margin:-6px 8px ;"
+                name="confirm_password" value="" required></font><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font id="phone">PHONE :<input type="number"
+                style="padding: 8px 31px; margin: -6px 6px; border: 2px teal solid; border-radius: 19px;" name="phone"
+                value="" required></font><br><br><br><br>
+
+        <input type="submit" style=" margin: 11px 4px;
+padding: 7px 22px;
+font-size: 20px;
+font-family: monospace;
+color: tomato;
+border: 3px teal solid; border-radius: 19px;     background-color: beige;" class="button" value="submit" /></b>
+    </form>
+</center>
+</body>
+
+</html>

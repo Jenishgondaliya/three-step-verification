@@ -1,0 +1,158 @@
+<!-- <?php
+if (!isset($_SERVER['HTTP_REFERER'])){ 
+?>
+<script>
+alert('no cheating dude');
+document.location = "login.html"
+</script>
+<?php 
+}
+?> -->
+<!doctype html>
+
+<head>
+    <title>Three Level Password Authentication</title>
+    <link rel="icon" href="images/fav1.jpg" type="image/gif" sizes="16x16">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e3d3d3;
+            font-family: system-ui;
+            font-size: x-large;
+
+        }
+
+        li {
+
+            float: left;
+            text-align: center;
+            margin: -17px 30px;
+            padding: 11px 10px;
+        }
+
+        li a {
+            display: block;
+            color: #994f10;
+            text-align: center;
+            padding: 17px 44px;
+            padding: 13px 44px;
+            text-decoration: revert;
+            text-align: center;
+        }
+
+        li a:hover {
+            background-color: #9973bd;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+            color: rgb(31, 236, 48);
+        }
+
+        h1 {
+            color: darkgoldenrod;
+            font-family: fangsong;
+        }
+
+        h1:hover {
+            color: tomato;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+        }
+
+        h2 {
+            font-size: 43px;
+            display: contents;
+            color: teal;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h2:hover {
+            background-color: salmon;
+            color: violet;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+
+        }
+
+        h3 {}
+
+        #otp {
+            font-size: 24px;
+            font-family: cursive;
+            color: #3a1a1a;
+
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+        }
+
+        #otp:hover {
+            color: floralwhite;
+        }
+
+        #btn {
+
+            color: #120101;
+            font-size: 17px;
+            font-family: cursive;
+            background-color: seashell;
+        }
+
+        #btn:hover {
+            background-color: coral;
+
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+        }
+
+        body {
+            background: url("https://media.istockphoto.com/photos/round-podium-or-pedestal-with-blue-background-picture-id1226478932?b=1&k=20&m=1226478932&s=170667a&w=0&h=hXsvxQilNanpKx7QC_tIsFUOKPl8fdIDfJ_QSKXesGE=");
+            background-repeat: repeat-n;
+            background-size: 1417px 664px;
+
+        }
+    </style>
+
+</head>
+
+<body background="otp.jpg">
+
+
+    <center>
+        <br>
+        <marquee>
+            <h1>THREE LEVEL PASSWORD AUTHENTICATION SYSTEM</h1>
+        </marquee><br><br>
+    </center>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signup.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <center>
+        <br> <br><br><br>
+        <h2>Otp verification</h2>
+        <center>
+            <br><br>
+            <form action="http://139.59.226.255:8001/api/auth/login" method="post">
+                <h3>
+                    <font id="otp">Enter phone number:<input type="text"
+                            style="margin: 6px 9px ; padding: 7px 6px; border: 2px solid olivedrab;" name="mobile_no"
+                            value='' required>
+                </h3>
+                </font><br><br>
+                
+                     <input type="submit" id="btn" onclick="window.location.href='file:///D:/html%20css%20js/project/verifiy.html'" style="margin: 5 px 4 px;
+                    padding: 5 px 9 px;" name="btn-save" value="Generate OTP" ></font>
+                </a><br><br>
+
+
+
+        </center>
+
+</body>
+<script>
+    
+
+</script>
+
+</html>
